@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --primary-red: #f53838;
@@ -7,8 +7,11 @@
   --primary-gray: #4f5665;
   --secondary-gray: #ddd;
   --tertiary-gray: #f6f6f6;
-  --border-radius: 10px;
+  --pure-white: #fff;
+  --pure-black: #000;
+  --card-border-radius: 10px;
   --border-width: 2px;
+  --btn-border-radius: 50px;
 }
 
 *,
@@ -24,7 +27,84 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+section {
+  padding: 5vw 10vw;
+}
+
+/* Select Card Section */
+
+.select-card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.select-card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-card-body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.select-card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  border: var(--border-width) solid var(--secondary-gray);
+  border-radius: var(--card-border-radius);
+  transition-property: border;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.select-card-item:hover {
+  border: var(--border-width) solid var(--primary-red);
+}
+
+.select-card-item-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.select-card-item-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.select-card-item-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-card-item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-card-item-btn {
+  padding: 13px 62px;
+  border-radius: var(--btn-border-radius);
+  border: var(--border-width) solid var(--primary-red);
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--secondary-red);
+  background-color: var(--pure-white);
+  cursor: pointer;
 }
