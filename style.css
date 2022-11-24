@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
 :root {
   --primary-red: #f53838;
   --secondary-red: #f53855;
@@ -35,6 +36,67 @@ body {
 section {
   padding: 5vw 10vw;
 }
+/* header section */
+.header-container{
+  display: flex;
+  
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  justify-content: center;
+}
+.header-text h1{
+  font-size: 4.8rem;
+  margin-top: 1rem;
+  }
+
+.header-text p{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.get-start-btn{
+  margin-top: 3rem;
+  height: 4rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  color: var(--pure-white);
+  background-color: var(--primary-red);
+  box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
+-webkit-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
+-moz-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
+}
+
+.header-img img{
+  width:50rem;
+  height:50rem;
+}
+
+.header-bottom{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.content-container{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  
+}
+
+.content-container i{
+ color: var(--primary-red);
+  font-size: 2rem;
+  
+  
+}
+
 
 /* Select Card Section */
 
@@ -108,3 +170,4 @@ section {
   background-color: var(--pure-white);
   cursor: pointer;
 }
+
