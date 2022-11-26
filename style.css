@@ -80,6 +80,7 @@ section {
 .header-bottom{
   display: flex;
   justify-content: space-around;
+  margin-top: 5rem;
   
 }
 
@@ -93,8 +94,17 @@ section {
 .content-container i{
  color: var(--primary-red);
   font-size: 2rem;
-  
-  
+  background-color: #fecaca;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.line-style{
+  height: 10rem;
 }
 
 
