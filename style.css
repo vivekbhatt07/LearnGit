@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 :root {
   --primary-red: #f53838;
   --secondary-red: #f53855;
@@ -37,27 +36,26 @@ section {
   padding: 5vw 10vw;
 }
 /* header section */
-.header-container{
+.header-container {
   display: flex;
-  
 }
-.header-text{
+.header-text {
   display: flex;
   flex-direction: column;
   flex-basis: 60%;
   justify-content: center;
 }
-.header-text h1{
+.header-text h1 {
   font-size: 4.8rem;
   margin-top: 1rem;
-  }
+}
 
-.header-text p{
+.header-text p {
   margin-top: 2rem;
   font-size: 1.8rem;
 }
 
-.get-start-btn{
+.get-start-btn {
   margin-top: 3rem;
   height: 4rem;
   width: 15rem;
@@ -67,32 +65,30 @@ section {
   border: none;
   color: var(--pure-white);
   background-color: var(--primary-red);
-  box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
--webkit-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
--moz-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
+  box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
+  -webkit-box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
+  -moz-box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
 }
 
-.header-img img{
-  width:50rem;
-  height:50rem;
+.header-img img {
+  width: 50rem;
+  height: 50rem;
 }
 
-.header-bottom{
+.header-bottom {
   display: flex;
   justify-content: space-around;
   margin-top: 5rem;
-  
 }
 
-.content-container{
+.content-container {
   display: flex;
   align-items: center;
   gap: 2rem;
-  
 }
 
-.content-container i{
- color: var(--primary-red);
+.content-container i {
+  color: var(--primary-red);
   font-size: 2rem;
   background-color: #fecaca;
   width: 5rem;
@@ -103,10 +99,9 @@ section {
   border-radius: 50%;
 }
 
-.line-style{
+.line-style {
   height: 10rem;
 }
-
 
 /* Select Card Section */
 
@@ -126,11 +121,16 @@ section {
 .select-card-body {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .select-card-item {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30%;
   gap: 32px;
   padding: 16px;
   border: var(--border-width) solid var(--secondary-gray);
@@ -180,4 +180,3 @@ section {
   background-color: var(--pure-white);
   cursor: pointer;
 }
-
