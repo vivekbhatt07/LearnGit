@@ -6,51 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <nav></nav>
     <header>
-    <section class="header-container">
-      <div class="header-text">
-        <h1>Want anything to be <br>easy  with <span style="font-weight:bold; font-size: 5rem;">LaslesVPN.</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="get-start-btn">Get Started</button>
-      </div>
-      <div class="header-img">
-        <img src="assets/undraw_developer_activity_re_39tg.svg" alt="">
-      </div>
-    </section>
-    
-    <section class="header-bottom">
-      <div class="content-container">
-        <i class="fa-solid fa-user"></i>
-        <div class="content-text">
-          <h2>90+</h2>
-          <p>Users</p>
+      <section class="header-container">
+        <div class="header-text">
+          <h1>
+            Want anything to be <br />easy with
+            <span style="font-weight: bold; font-size: 5rem">LaslesVPN.</span>
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="get-start-btn">Get Started</button>
         </div>
-      </div>
-
-      <div class="content-container">
-        <i class="fa-sharp fa-solid fa-location-dot"></i>
-        <div class="content-text">
-          <h2>30+</h2>
-          <p>Locations</p>
+        <div class="header-img">
+          <img src="assets/undraw_developer_activity_re_39tg.svg" alt="" />
         </div>
-      </div>
+      </section>
 
-      <div class="content-container">
-        <i class="fa-solid fa-server"></i>
-        <div class="content-text">
-          <h2>50+</h2>
-          <p>Servers</p>
+      <section class="header-bottom">
+        <div class="content-container">
+          <i class="fa-solid fa-user"></i>
+          <div class="content-text">
+            <h2>90+</h2>
+            <p>Users</p>
+          </div>
         </div>
-      </div>
-    </section>
 
+        <div class="content-container">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <div class="content-text">
+            <h2>30+</h2>
+            <p>Locations</p>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <i class="fa-solid fa-server"></i>
+          <div class="content-text">
+            <h2>50+</h2>
+            <p>Servers</p>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-      <section></section>
+      <section id="wrapper">
+        <div id="contact-form">
+          <p class="contact-form-heading">Contact Form</p>
+          <form action="" id="user-form">
+            <label for="user-name"
+              >Name
+              <input
+                id="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Enter your name"
+                required
+              />
+            </label>
+            <label for="user-email"
+              >Email
+              <input
+                id="user-email"
+                type="text"
+                name="user-email"
+                placeholder="Enter your E-mail"
+              />
+            </label>
+            <label for="user-contact"
+              >Contact(optional)
+              <input
+                id="user-contact"
+                type="text"
+                name="user-contact"
+                placeholder="Enter your E-mail"
+                required
+              />
+            </label>
+
+            <input
+              id="sumbit-btn"
+              type="submit"
+              name="sumbit-btn"
+              placeholder="Enter your Contact number"
+              value="submit"
+            />
+          </form>
+        </div>
+      </section>
       <section class="select-card-section">
         <div class="select-card-head">
           <h2>Choose Your Plan</h2>
