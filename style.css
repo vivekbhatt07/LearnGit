@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
 :root {
   --primary-red: #f53838;
   --secondary-red: #f53855;
@@ -32,32 +31,36 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
 }
+/* for streching the height of html and body */
+html,
+body {
+  min-height: 100%;
+}
 
 section {
   padding: 5vw 10vw;
 }
 /* header section */
-.header-container{
+.header-container {
   display: flex;
-  
 }
-.header-text{
+.header-text {
   display: flex;
   flex-direction: column;
   flex-basis: 60%;
   justify-content: center;
 }
-.header-text h1{
+.header-text h1 {
   font-size: 4.8rem;
   margin-top: 1rem;
-  }
+}
 
-.header-text p{
+.header-text p {
   margin-top: 2rem;
   font-size: 1.8rem;
 }
 
-.get-start-btn{
+.get-start-btn {
   margin-top: 3rem;
   height: 4rem;
   width: 15rem;
@@ -67,36 +70,31 @@ section {
   border: none;
   color: var(--pure-white);
   background-color: var(--primary-red);
-  box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
--webkit-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
--moz-box-shadow: -1px 10px 13px -7px rgba(245,56,85,0.75);
+  box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
+  -webkit-box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
+  -moz-box-shadow: -1px 10px 13px -7px rgba(245, 56, 85, 0.75);
 }
 
-.header-img img{
-  width:50rem;
-  height:50rem;
+.header-img img {
+  width: 50rem;
+  height: 50rem;
 }
 
-.header-bottom{
+.header-bottom {
   display: flex;
   justify-content: space-around;
-  
 }
 
-.content-container{
+.content-container {
   display: flex;
   align-items: center;
   gap: 2rem;
-  
 }
 
-.content-container i{
- color: var(--primary-red);
+.content-container i {
+  color: var(--primary-red);
   font-size: 2rem;
-  
-  
 }
-
 
 /* Select Card Section */
 
@@ -171,3 +169,90 @@ section {
   cursor: pointer;
 }
 
+/* Registration form */
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-red);
+}
+.user-form {
+  flex: 1; /* flex is shorthand property for flex-grow,flex-shrink,flex-basia */
+  background-color: #f6f6f6;
+  max-width: 600px; /*flex one is for small screen but max-width for big screen */
+  border-radius: 16px;
+}
+.form-header {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--primary-gray);
+}
+.form-header > h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-black);
+}
+
+.form-body {
+  padding: 5px 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0.625rem 0.3125rem;
+}
+
+label {
+  color: var(--primary-black);
+  font-size: 1.625remrem;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-size: 1.4rem;
+  min-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid var(--primary-red);
+  border-radius: 4px;
+  background: white;
+  color: var(--primary-black);
+  outline: none;
+}
+
+@media only screen and (max-width: 650px) {
+  /* when the screen size is less than 650px, it is convert into single column */
+  .row {
+    flex-direction: column;
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.form-footer > .btn {
+  padding: 10px 20px;
+  background: var(--primary-red);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  color: var(--pure-white);
+  cursor: pointer;
+  margin: 0.625rem 0.3125rem;
+  width: 80%;
+}
