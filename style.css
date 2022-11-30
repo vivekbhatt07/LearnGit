@@ -127,10 +127,7 @@ section {
 .header-bottom {
   display: flex;
   justify-content: space-around;
-<<<<<<< HEAD
-=======
   margin-top: 5rem;
->>>>>>> origin
 }
 
 .content-container {
@@ -142,10 +139,6 @@ section {
 .content-container i {
   color: var(--primary-red);
   font-size: 2rem;
-<<<<<<< HEAD
-}
-
-=======
   background-color: #fecaca;
   width: 5rem;
   height: 5rem;
@@ -159,7 +152,6 @@ section {
   height: 10rem;
 }
 
->>>>>>> origin
 /* Select Card Section */
 
 .select-card-section {
@@ -237,7 +229,6 @@ section {
   background-color: var(--pure-white);
   cursor: pointer;
 }
-<<<<<<< HEAD
 
 /* Registration form */
 #wrapper {
@@ -326,5 +317,3 @@ input[type="password"] {
   margin: 0.625rem 0.3125rem;
   width: 80%;
 }
-=======
->>>>>>> origin
