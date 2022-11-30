@@ -28,8 +28,38 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 1.6rem;
+  font-size: 62.5%;
   font-weight: 400;
+}
+
+/* Nav Bar */
+
+.nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr repeat(2, 1.5fr);
+  padding: 5.6rem;
+}
+
+.nav--name {
+  text-align: center;
+}
+
+.nav--sections {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.nav--sign-in {
+  text-align: center;
+}
+
+.nav--sign-up {
+  text-align: center;
+}
+
+div {
+  font-size: 1.6rem;
 }
 
 section {
