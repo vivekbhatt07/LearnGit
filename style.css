@@ -36,37 +36,51 @@ body {
 
 .nav {
   display: grid;
-  grid-template-columns: 1.5fr 4fr repeat(2, 1.5fr);
-  padding: 5.6rem;
+  min-width: 100vw;
+  grid-template-columns: 1.5fr 4fr 1fr 1.5fr;
+  padding: 5.6rem 0;
+  align-items: center;
 }
 
 .nav--name {
   text-align: center;
+  font-size: 3rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
 }
 
 .nav--sections {
   display: flex;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 5rem;
 }
 
 .nav--sign-in {
   text-align: center;
+  font-weight: 600;
 }
 
-.nav--sign-up {
-  text-align: center;
+.nav--sign-up a {
+  font-weight: 600;
+  color: var(--secondary-red);
+  border: 1px solid var(--secondary-red);
+  width: max-content;
+  border-radius: 5rem;
+  padding: 1.3rem 4.5rem;
 }
 
 div {
   font-size: 1.6rem;
 }
 
+/* Select Card Section */
+
 section {
   padding: 5vw 10vw;
 }
-
-/* Select Card Section */
 
 .select-card-section {
   display: flex;
