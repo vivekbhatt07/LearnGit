@@ -239,6 +239,10 @@ section {
   background-color: #f8f8f8;
 }
 
+.footer div:first-child {
+  margin-left: 12%;
+}
+
 .footer .footer--heading {
   margin-bottom: 2.5rem;
   font-size: 1.8rem;
