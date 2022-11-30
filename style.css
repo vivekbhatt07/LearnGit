@@ -52,6 +52,12 @@ body {
   font-size: 3rem;
 }
 
+.logo {
+  width: 3.5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
 .nav a {
   text-decoration: none;
   color: #000;
@@ -316,4 +322,45 @@ input[type="password"] {
   cursor: pointer;
   margin: 0.625rem 0.3125rem;
   width: 80%;
+}
+
+.footer {
+  display: grid;
+  min-width: 100vw;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  padding: 4rem 6rem 3rem;
+  background-color: #f8f8f8;
+}
+
+.footer div:first-child {
+  margin-left: 12%;
+}
+
+.footer .footer--heading {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.footer .footer--logo {
+  font-size: 2rem;
+}
+
+.footer--description {
+  line-height: 3.2rem;
+  color: var(--primary-gray);
+  width: 34rem;
+}
+
+.footer .footer--disclaimer {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #afb5c0;
+}
+
+.footer p {
+  color: var(--primary-gray);
+  line-height: 3rem;
+  margin-bottom: 1rem;
 }
